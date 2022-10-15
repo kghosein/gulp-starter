@@ -1,0 +1,27 @@
+@import './variables';
+
+body.dark {
+    background-color: $darkmode-body-background;
+
+    h1, h2, h3 {
+        color: $darkmode-other-color;
+    }
+
+    header {
+        background-color: $darkmode-body-background;
+        box-shadow: 0 2px 5px 1px $darkmode-other-color;
+    }
+
+    footer {
+        background-color: $darkmode-footer-background;
+    }
+
+    .features {
+        background-color: $template-features-background;
+        color: #000;
+    }
+
+    .about-container {
+        color: $secondary-color;
+    }
+}

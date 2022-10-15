@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gulp Starter</title>
+    <!-- font links included -->
+    @@include('./layouts/font-links.html')
     <!-- build:css ./styles/main.css -->
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="./styles/main.scss" />
     <!-- endbuild -->
     <script defer src="./js/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header included -->
     @@include('./layouts/header.html')
-    <div class="container"> 
-        <h1>Hello gulp</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, molestiae.</p>
-        <img src="./assets/images/avatar-ali.png">
-        <img src="./assets/images/unnamed.jpg" alt="">
-        <p>live reloading browser sync hi</p>
+
+    <div class="container">
+      <h2>Template Features</h2>
+      <div class="features">
+        <ul>
+          <li>
+            Modularize your HTML without any templating engine (see
+            <code>src/layouts</code>).
+          </li>
+          <li>Compile SASS.</li>
+          <li>
+            Use PostCSS's most famous plugins such as Autoprefixer and CSSnano.
+          </li>
+          <li>
+            <code>webpack-stream</code> to use Webpack along with
+            <code>esbuild-loader</code> (the combination which in my opinion is
+            the most sound way of bundling your JavaScript(or TypeScript) for
+            all kinds of web browsers).
+          </li>
+          <li>HTML, CSS and JavaScript minification on production.</li>
+          <li>Image optimization with <code>gulp-imagemin</code>.</li>
+          <li>BrowserSync and live reloading.</li>
+          <li>Explore other features while you use the template.</li>
+        </ul>
+        <h2>How to Use?</h2>
+        <ul>
+          <li>
+            <code>yarn</code> or <code>npm install</code> to install all the
+            dependencies and devDependencies.
+          </li>
+          <li>
+            <code>yarn dev</code> or <code>npm run dev</code> for development.
+          </li>
+          <li>
+            <code>yarn prod</code> or <code>npm run prod</code> for production.
+          </li>
+        </ul>
+      </div>
     </div>
-    <a href="./pages/about.html">About</a>
+
     <!-- footer included -->
     @@include('./layouts/footer.html')
-</body>
+  </body>
 </html>

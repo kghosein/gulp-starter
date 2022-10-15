@@ -15,6 +15,7 @@ const cssnano = require('cssnano');
 const sass = require('gulp-sass')(require('sass'));
 
 // images
+const imageMin = require('gulp-imagemin'); 
 
 // scripts
 const webpack = require('webpack-stream');
@@ -120,9 +121,11 @@ function Css(done) {
 //     return done();
 // }
 
-// (optimize images in production) & copy images
+// optimize images on production & copy images
 function Images(done) {
     src(filePath.images.input)
+    // optimize images on production
+    .pipe(mode.production(imageMin()))
     .pipe(dest(filePath.images.output));
     return done();
 }

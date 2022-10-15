@@ -1,0 +1,27 @@
+@import './variables';
+
+.container {
+    width: 85%;
+    margin: 3rem auto;
+    font-family: $secondary-font;
+
+    ul {
+        list-style-type: circle;
+    }
+
+    h2 {
+        font-family: $primary-font;
+    }
+
+    .features {
+        background-color: #f1efef;
+        padding: 2rem;
+        font-family: $regular-font;
+    }
+    .features code {
+        background-color: $secondary-color;
+    }
+    .features h2 {
+        margin-top: 1rem;
+    }
+}

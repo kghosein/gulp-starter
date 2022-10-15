@@ -1,22 +1,7 @@
-@import './partials/footer';
-@import './partials/header';
+@import './partials/reset';
 @import './partials/variables';
-
-
-.about {
-    color: $primary-color;
-}
-
-.container {
-    width: 50%;
-    margin: auto;
-
-  h1 {
-    font-size: 2rem;
-    color: $primary-color;
-}
-}
-
-.test {
-    width: max-content;
-}
+@import './partials/header';
+@import './partials/footer';
+@import './partials/homepage';
+@import './partials/aboutpage';
+@import './partials/darkmode';
