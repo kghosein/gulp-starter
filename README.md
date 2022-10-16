@@ -13,6 +13,7 @@ Automate your workflows with [Gulp](https://gulpjs.com/).
 - Dynamic navigation links.
 - Dark mode and save user preferences for theme appearance using local storage.
 - BrowserSync and live reloading.
+- Explore other features while you use the template.
 
 ## How to Use?
 
