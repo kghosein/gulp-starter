@@ -11,12 +11,12 @@ export default function navLinks() {
         navAnchors[1].href = './pages/about.html'; // about page
         navAnchors[2].href = './pages/contact.html'; // contact page
     } else if(aboutPage !== null) {
-        console.log('about page')
+        console.log('about page');
         navAnchors[0].href = '/' // home
         navAnchors[1].href = 'javascript:void(0);' // about (no reference)
         navAnchors[2].href = 'contact.html'; // contact page
     } else if(contactPage !== null) {
-        console.log('contact page')
+        console.log('contact page');
         navAnchors[0].href = '/' // home
         navAnchors[1].href = 'about.html' // about page
         navAnchors[2].href = 'javascript:void(0);'; // contact page (no reference)

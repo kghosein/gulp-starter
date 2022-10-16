@@ -1,6 +1,6 @@
 // gulp
 const {src, dest, watch, series, parallel} = require('gulp');
-const fileInclude = require('gulp-file-include');
+const fileInclude = require('gulp-file-include'); // include html as file in html
 const rimraf = require('rimraf');
 const useref = require('gulp-useref');
 const mode = require('gulp-mode')(); // default mode is development

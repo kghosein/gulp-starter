@@ -4,7 +4,7 @@ import navLinks from "./modules/navlinks";
 import slide from "./modules/slides";
 import animation from "./modules/animation";
 const sRequire = require("./modules/sampleRequire");
-console.log("main js file");
+console.log("main (bundled) js file");
 slide();
 animation();
 sRequire();
