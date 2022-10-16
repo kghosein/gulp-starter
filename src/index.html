@@ -12,12 +12,16 @@
     <!-- endbuild -->
     <script defer src="./js/main.js"></script>
   </head>
-  <body>
+  <body id="homepage">
     <!-- header included -->
     @@include('./layouts/header.html')
 
     <div class="container">
+
       <h2>Template Features</h2>
+      <div class="dark-mode-button-wrapper">
+        @@include('./layouts/dark-mode-button.html')
+      </div>
       <div class="features">
         <ul>
           <li>
@@ -37,6 +41,8 @@
           <li>HTML, CSS and JavaScript minification on production.</li>
           <li>Image optimization with <code>gulp-imagemin</code>.</li>
           <li>BrowserSync and live reloading.</li>
+          <li>Dynamic navigation links.</li>
+          <li>Dark mode and save user preferences for theme appearance using local storage.</li>
           <li>Explore other features while you use the template.</li>
         </ul>
         <h2>How to Use?</h2>

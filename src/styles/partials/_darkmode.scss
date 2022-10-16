@@ -1,27 +1,105 @@
-@import './variables';
+@import "./variables";
 
 body.dark {
+  background-color: $darkmode-body-background;
+
+  h1,
+  h2,
+  h3 {
+    color: $darkmode-other-color;
+  }
+
+  header {
     background-color: $darkmode-body-background;
+    box-shadow: 0 2px 5px 1px $darkmode-other-color;
+  }
 
-    h1, h2, h3 {
-        color: $darkmode-other-color;
+  footer {
+    background-color: $darkmode-footer-background;
+  }
+
+  .features {
+    background-color: $template-features-background;
+    color: #000;
+  }
+
+  .about-container {
+    color: $secondary-color;
+  }
+
+  .icon-cover.to-dark {
+    transform: translateX(1px);
+  }
+  .toggle-mode-wrapper {
+    box-shadow: 0px 0px 3px 0px $darkmode-other-color;
+    background-color: $darkmode-footer-background;
+  }
+
+  .contact-container .contact-form {
+    box-shadow: $darkmode-other-color 0 6px 12px -2px, $darkmode-other-color 0 3px 7px -3px;
+
+    input,
+    textarea {
+      background-color: transparent;
+      color: $secondary-color;
+      border: 1px solid $darkmode-other-color;  
+    }
+    label {
+      color: $secondary-color;
+    }
+    input:focus ~ label,
+        input:valid ~ label,
+        textarea:focus ~ label,
+        textarea:valid ~ label {
+          color: $secondary-color;
+          background-color: $darkmode-body-background;
+        }
+    input:focus,
+        input:valid,
+        textarea:focus,
+        textarea:valid {
+          border: 2px solid $darkmode-other-color;
+    }
+  }
+
+  button.primary-cta  {
+    color: $secondary-color;
+    border-color: $template-features-background;
+
+    &::before {
+      background-color: $template-features-background;
+     }
+  }
+}
+
+.dark-mode-button-wrapper {
+  position: absolute;
+  top: -2em;
+  right: 0;
+
+  .toggle-mode-wrapper {
+    position: relative;
+    width: 55px;
+    display: inline-block;
+    height: 26px;
+    background-color: #763800;
+    border-radius: 55px;
+    padding: 4px;
+
+    svg {
+      margin: 2px;
     }
 
-    header {
-        background-color: $darkmode-body-background;
-        box-shadow: 0 2px 5px 1px $darkmode-other-color;
+    .icon-cover {
+      display: inline-block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-color: #fff;
+      z-index: 1;
+      border-radius: 50%;
+      transform: translateX(25px);
+      transition: all 0.2s;
     }
-
-    footer {
-        background-color: $darkmode-footer-background;
-    }
-
-    .features {
-        background-color: $template-features-background;
-        color: #000;
-    }
-
-    .about-container {
-        color: $secondary-color;
-    }
+  }
 }

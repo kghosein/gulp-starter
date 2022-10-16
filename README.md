@@ -10,6 +10,8 @@ Automate your workflows with [Gulp](https://gulpjs.com/).
 - `webpack-stream` to use Webpack along with `esbuild-loader` (the combination which in my opinion is the most sound way of bundling your JavaScript(or TypeScript) for all kinds of web browsers).
 - HTML, CSS and JavaScript minification on production.
 - Image optimization with `gulp-imagemin`.
+- Dynamic navigation links.
+- Dark mode and save user preferences for theme appearance using local storage.
 - BrowserSync and live reloading.
 
 ## How to Use?

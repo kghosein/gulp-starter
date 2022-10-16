@@ -1,11 +1,20 @@
-import slide from './modules/slides';
-import animation from './modules/animation';
-const sRequire = require('./modules/sampleRequire');
+import toggleMode from "./modules/darkmode";
+import navLinks from "./modules/navlinks";
 
-console.log('main js file');
+import slide from "./modules/slides";
+import animation from "./modules/animation";
+const sRequire = require("./modules/sampleRequire");
+console.log("main js file");
 slide();
 animation();
 sRequire();
 
+// year in footer
 const d = new Date();
 document.getElementById("currentYear").innerHTML = d.getFullYear();
+
+// toggle dark mode
+toggleMode();
+
+// dynamic nav links
+navLinks();
